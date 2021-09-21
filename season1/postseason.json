@@ -11,7 +11,7 @@
                 "rule": "112121002121222001002001210",
                 "ruleName": "Rule 214 New Moon Cave Turkey",
                 "description": "Game 1, Monterey Bay League Division Series 1",
-                "id": "5586420c-1b09-492c-a8dc-9ccb848f9795",
+                "gameid": "5586420c-1b09-492c-a8dc-9ccb848f9795",
                 "isPostseason": true,
                 "map": {
                     "patternName": "starfield",
@@ -55,7 +55,7 @@
                 "rule": "110110001220220002120120120",
                 "ruleName": "Rule 154 Waning Crescent Thermophilic Weaver Spider",
                 "description": "Game 1, Monterey Bay League Division Series 2",
-                "id": "73d01098-7203-4ee5-8df8-15fd92034bcd",
+                "gameid": "73d01098-7203-4ee5-8df8-15fd92034bcd",
                 "isPostseason": true,
                 "map": {
                     "patternName": "river",
@@ -99,7 +99,7 @@
                 "rule": "220110001220110002220110120",
                 "ruleName": "Rule 154 Half Moon Electric Camel Spider",
                 "description": "Game 1, San Francisco Bay League Division Series 1",
-                "id": "a267f519-76ce-4d98-9e77-731a52abad8d",
+                "gameid": "a267f519-76ce-4d98-9e77-731a52abad8d",
                 "isPostseason": true,
                 "map": {
                     "patternName": "isotropic",
@@ -143,7 +143,7 @@
                 "rule": "111112001221222002000000120",
                 "ruleName": "Rule 210 Waning Crescent Thermophilic Spider Mite",
                 "description": "Game 1, San Francisco Bay League Division Series 2",
-                "id": "258eb259-6943-49d7-ad5a-08a3253b874b",
+                "gameid": "258eb259-6943-49d7-ad5a-08a3253b874b",
                 "isPostseason": true,
                 "map": {
                     "patternName": "matrix",
@@ -189,7 +189,7 @@
                 "rule": "112122001121221002000000120",
                 "ruleName": "Rule 210 New Moon Electric Vampire Spider",
                 "description": "Game 2, Monterey Bay League Division Series 1",
-                "id": "50460716-daf5-4059-bb29-c6a86631b62d",
+                "gameid": "50460716-daf5-4059-bb29-c6a86631b62d",
                 "isPostseason": true,
                 "map": {
                     "patternName": "river",
@@ -233,7 +233,7 @@
                 "rule": "000000111000000222111222120",
                 "ruleName": "Rule 62 Deep Water Jumping Spider",
                 "description": "Game 2, Monterey Bay League Division Series 2",
-                "id": "ed3250a2-ff93-4ca8-85a4-d8a82f46c0ec",
+                "gameid": "ed3250a2-ff93-4ca8-85a4-d8a82f46c0ec",
                 "isPostseason": true,
                 "map": {
                     "patternName": "lighthouse",
@@ -277,7 +277,7 @@
                 "rule": "111111001222222002110220120",
                 "ruleName": "Rule 218 Waning Crescent Deep Water Spider Mite",
                 "description": "Game 2, San Francisco Bay League Division Series 1",
-                "id": "c2cf5ebe-90dc-4e1a-9d59-e825852636bc",
+                "gameid": "c2cf5ebe-90dc-4e1a-9d59-e825852636bc",
                 "isPostseason": true,
                 "map": {
                     "patternName": "matrix",
@@ -321,7 +321,7 @@
                 "rule": "000000111000000222111222120",
                 "ruleName": "Rule 62 Deep Water Jumping Spider",
                 "description": "Game 2, San Francisco Bay League Division Series 2",
-                "id": "22ac8364-46a3-493d-9212-b828647dbb12",
+                "gameid": "22ac8364-46a3-493d-9212-b828647dbb12",
                 "isPostseason": true,
                 "map": {
                     "patternName": "isotropic",
@@ -367,7 +367,7 @@
                 "rule": "222111001222111002210210120",
                 "ruleName": "Rule 218 Half Moon Quantum Ground Spider",
                 "description": "Game 3, Monterey Bay League Division Series 1",
-                "id": "d9b03c89-85e1-4a60-ae0a-fb867a48a56b",
+                "gameid": "d9b03c89-85e1-4a60-ae0a-fb867a48a56b",
                 "isPostseason": true,
                 "map": {
                     "patternName": "starfield",
@@ -411,7 +411,7 @@
                 "rule": "111111002222222001110220210",
                 "ruleName": "Rule 218 Waning Crescent Deep Water Skimmer",
                 "description": "Game 3, Monterey Bay League Division Series 2",
-                "id": "21384d69-6219-4bbe-9f5b-a04fa43ed5aa",
+                "gameid": "21384d69-6219-4bbe-9f5b-a04fa43ed5aa",
                 "isPostseason": true,
                 "map": {
                     "patternName": "towers",
@@ -455,7 +455,7 @@
                 "rule": "220220002110110001120120210",
                 "ruleName": "Rule 154 Waning Gibbous Thermophilic Crane",
                 "description": "Game 3, San Francisco Bay League Division Series 1",
-                "id": "333588a3-a482-4303-9e1a-a31a568f2704",
+                "gameid": "333588a3-a482-4303-9e1a-a31a568f2704",
                 "isPostseason": true,
                 "map": {
                     "patternName": "isotropic",
@@ -499,7 +499,7 @@
                 "rule": "211212000212211000002001210",
                 "ruleName": "Rule 198 Waxing Gibbous Swamp Cukoo",
                 "description": "Game 3, San Francisco Bay League Division Series 2",
-                "id": "97288323-626d-48ab-b835-c7b96c447b4e",
+                "gameid": "97288323-626d-48ab-b835-c7b96c447b4e",
                 "isPostseason": true,
                 "map": {
                     "patternName": "lake",
@@ -545,7 +545,7 @@
                 "rule": "002002220001001110221112120",
                 "ruleName": "Rule 110 Electric Wind Spider",
                 "description": "Game 4, Monterey Bay League Division Series 2",
-                "id": "8a57598f-ab41-4daa-8aa5-ae78aefdcc03",
+                "gameid": "8a57598f-ab41-4daa-8aa5-ae78aefdcc03",
                 "isPostseason": true,
                 "map": {
                     "patternName": "lake",
@@ -589,7 +589,7 @@
                 "rule": "111112001221222002001002120",
                 "ruleName": "Rule 214 Waning Crescent Thermophilic Tube Spider",
                 "description": "Game 4, San Francisco Bay League Division Series 1",
-                "id": "6a7d6857-b9e4-41d2-bfa1-11b90397e4b2",
+                "gameid": "6a7d6857-b9e4-41d2-bfa1-11b90397e4b2",
                 "isPostseason": true,
                 "map": {
                     "patternName": "towers",
@@ -633,7 +633,7 @@
                 "rule": "110120001120220002110220120",
                 "ruleName": "Rule 154 New Moon Deep Water Silk Spider",
                 "description": "Game 4, San Francisco Bay League Division Series 2",
-                "id": "012e20dd-835e-4055-86bd-436026a675d5",
+                "gameid": "012e20dd-835e-4055-86bd-436026a675d5",
                 "isPostseason": true,
                 "map": {
                     "patternName": "isotropic",
@@ -679,7 +679,7 @@
                 "rule": "110120211120220122001002120",
                 "ruleName": "Rule 182 New Moon Cave Claw Spider",
                 "description": "Game 5, Monterey Bay League Division Series 2",
-                "id": "bd0a38c5-ef00-453b-9b4a-f6b3ace838de",
+                "gameid": "bd0a38c5-ef00-453b-9b4a-f6b3ace838de",
                 "isPostseason": true,
                 "map": {
                     "patternName": "lighthouse",
@@ -723,7 +723,7 @@
                 "rule": "001002001001002002001002120",
                 "ruleName": "Rule 86 Thermophilic Orb Weaver",
                 "description": "Game 5, San Francisco Bay League Division Series 1",
-                "id": "e80ff16a-2cb5-48a4-b584-4d5dd0efc2d2",
+                "gameid": "e80ff16a-2cb5-48a4-b584-4d5dd0efc2d2",
                 "isPostseason": true,
                 "map": {
                     "patternName": "isotropic",
@@ -771,7 +771,7 @@
                 "rule": "122122002121121001002001210",
                 "ruleName": "Rule 214 Waxing Crescent Electric Pigeon",
                 "description": "Game 1, Monterey Bay League Championship Series",
-                "id": "e6a3ac22-17f2-4eb7-b275-5c8b1eafcc13",
+                "gameid": "e6a3ac22-17f2-4eb7-b275-5c8b1eafcc13",
                 "isPostseason": true,
                 "map": {
                     "patternName": "supercritical",
@@ -815,7 +815,7 @@
                 "rule": "222211000212111000001002120",
                 "ruleName": "Rule 198 Full Moon Quantum Camel Spider",
                 "description": "Game 1, San Francisco Bay League Championship Series",
-                "id": "8f92bfb6-cbda-4641-ad17-8a26c5933318",
+                "gameid": "8f92bfb6-cbda-4641-ad17-8a26c5933318",
                 "isPostseason": true,
                 "map": {
                     "patternName": "river",
@@ -861,7 +861,7 @@
                 "rule": "110110211220220212000000120",
                 "ruleName": "Rule 178 Waning Crescent Quantum Wind Spider",
                 "description": "Game 2, Monterey Bay League Championship Series",
-                "id": "7c6bbe5a-0034-47c3-87fa-ed015c224240",
+                "gameid": "7c6bbe5a-0034-47c3-87fa-ed015c224240",
                 "isPostseason": true,
                 "map": {
                     "patternName": "lighthouse",
@@ -905,7 +905,7 @@
                 "rule": "122121002122121001002001210",
                 "ruleName": "Rule 214 Waxing Crescent Quantum Vulture",
                 "description": "Game 2, San Francisco Bay League Championship Series",
-                "id": "7ffd6ee1-9293-44ae-8b30-1eb3bb1fcc49",
+                "gameid": "7ffd6ee1-9293-44ae-8b30-1eb3bb1fcc49",
                 "isPostseason": true,
                 "map": {
                     "patternName": "isotropic",
@@ -951,7 +951,7 @@
                 "rule": "221112000221112000001002120",
                 "ruleName": "Rule 198 Half Moon Thermophilic Sea Spider",
                 "description": "Game 3, Monterey Bay League Championship Series",
-                "id": "2aac15c7-f142-4921-ba0a-c38599d82a36",
+                "gameid": "2aac15c7-f142-4921-ba0a-c38599d82a36",
                 "isPostseason": true,
                 "map": {
                     "patternName": "towers",
@@ -995,7 +995,7 @@
                 "rule": "221212002212111001002001210",
                 "ruleName": "Rule 214 Full Moon Swamp Kiwi",
                 "description": "Game 3, San Francisco Bay League Championship Series",
-                "id": "764c6709-c057-4c29-a83c-81fb29cee652",
+                "gameid": "764c6709-c057-4c29-a83c-81fb29cee652",
                 "isPostseason": true,
                 "map": {
                     "patternName": "isotropic",
@@ -1041,7 +1041,7 @@
                 "rule": "121122000122121000002001210",
                 "ruleName": "Rule 198 Waxing Crescent Swamp Puffin",
                 "description": "Game 4, Monterey Bay League Championship Series",
-                "id": "24244bf0-f2b6-494e-bc40-2988f88daf59",
+                "gameid": "24244bf0-f2b6-494e-bc40-2988f88daf59",
                 "isPostseason": true,
                 "map": {
                     "patternName": "river",
@@ -1085,7 +1085,7 @@
                 "rule": "222112002221111001002001210",
                 "ruleName": "Rule 214 Half Moon Electric Stitchbird",
                 "description": "Game 4, San Francisco Bay League Championship Series",
-                "id": "9889413e-3b1b-47e7-9b45-c11894e6c4cb",
+                "gameid": "9889413e-3b1b-47e7-9b45-c11894e6c4cb",
                 "isPostseason": true,
                 "map": {
                     "patternName": "towers",
@@ -1131,7 +1131,7 @@
                 "rule": "220220002110110001220110210",
                 "ruleName": "Rule 154 Waning Gibbous Electric Flycatcher",
                 "description": "Game 5, Monterey Bay League Championship Series",
-                "id": "1dbc2bd0-cdcb-4794-bd71-8c5a95db33b9",
+                "gameid": "1dbc2bd0-cdcb-4794-bd71-8c5a95db33b9",
                 "isPostseason": true,
                 "map": {
                     "patternName": "river",
@@ -1178,7 +1178,7 @@
                 "ruleName": "Rule 182 Half Moon Quantum Flycatcher",
                 "description": "Game 1, Dragon Cup",
                 "season": 1,
-                "id": "2990477c-0ab4-4e7b-b886-e943580c2810",
+                "gameid": "2990477c-0ab4-4e7b-b886-e943580c2810",
                 "isPostseason": true,
                 "map": {
                     "patternName": "isotropic",
@@ -1223,7 +1223,7 @@
                 "ruleName": "Rule 210 Full Moon Deep Water Cukoo",
                 "description": "Game 2, Dragon Cup",
                 "season": 1,
-                "id": "7186ca48-a9b1-44c8-a03b-04b3a68982df",
+                "gameid": "7186ca48-a9b1-44c8-a03b-04b3a68982df",
                 "isPostseason": true,
                 "map": {
                     "patternName": "starfield",
@@ -1268,7 +1268,7 @@
                 "ruleName": "Rule 178 Waning Crescent Swamp Hummingbird",
                 "description": "Game 3, Dragon Cup",
                 "season": 1,
-                "id": "701e2f35-b67d-4887-b786-6bb7ae6635e6",
+                "gameid": "701e2f35-b67d-4887-b786-6bb7ae6635e6",
                 "isPostseason": true,
                 "map": {
                     "patternName": "supercritical",
@@ -1313,7 +1313,7 @@
                 "ruleName": "Rule 214 Waxing Crescent Deep Water Troglobite Spider",
                 "description": "Game 4, Dragon Cup",
                 "season": 1,
-                "id": "37e5f56e-7083-4291-991b-5b8440762b28",
+                "gameid": "37e5f56e-7083-4291-991b-5b8440762b28",
                 "isPostseason": true,
                 "map": {
                     "patternName": "lighthouse",
@@ -1358,7 +1358,7 @@
                 "ruleName": "Rule 178 Waning Crescent Electric Turkey",
                 "description": "Game 5, Dragon Cup",
                 "season": 1,
-                "id": "1824f749-66c9-4542-beba-603ad0629a8e",
+                "gameid": "1824f749-66c9-4542-beba-603ad0629a8e",
                 "isPostseason": true,
                 "map": {
                     "patternName": "towers",
