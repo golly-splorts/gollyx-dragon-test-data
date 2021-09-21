@@ -54,7 +54,7 @@ for iseason in range(LAST_SEASON0 + 1):
     # game function defs
 
     def check_id(game):
-        if "id" not in game:
+        if "gameid" not in game:
             raise Exception(f"Error: missing game id from game {game}")
 
     def check_name_color_match(game):
@@ -62,14 +62,14 @@ for iseason in range(LAST_SEASON0 + 1):
         t1 = game["team1Name"]
         t1c = game["team1Color"]
         if t1c != get_team_color(t1):
-            err = f"Error in game {game['id']} of season {game['season']} day {game['day']}:\n"
+            err = f"Error in game {game['gameid']} of season {game['season']} day {game['day']}:\n"
             err += f"Team 1 {t1} had specified team color {t1c}\n"
             err += f"Does not match get_team_color({t1}) = {get_team_color(t1)}"
             raise Exception(err)
         t2 = game["team2Name"]
         t2c = game["team2Color"]
         if t2c != get_team_color(t2):
-            err = f"Error in game {game['id']} of season {game['season']} day {game['day']}:\n"
+            err = f"Error in game {game['gameid']} of season {game['season']} day {game['day']}:\n"
             err += f"Team 2 {t2} had specified team color {t2c}\n"
             err += f"Does not match get_team_color({t2}) = {get_team_color(t2)}"
             raise Exception(err)
@@ -79,15 +79,15 @@ for iseason in range(LAST_SEASON0 + 1):
         t2s = game["team2Score"]
         if t1s == t2s:
             raise Exception(
-                f"Error in game {game['id']} of season {game['season']} day {game['day']}: game is tied! {team1Score}-{team2Score}"
+                f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: game is tied! {team1Score}-{team2Score}"
             )
         if t1s < 0 or t2s < 0:
             raise Exception(
-                f"Error in game {game['id']} of season {game['season']} day {game['day']}: negative score ({t1s})-({t2s})"
+                f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: negative score ({t1s})-({t2s})"
             )
         if t1s < 10 and t2s < 10:
             raise Exception(
-                f"Error in game {game['id']} of season {game['season']} day {game['day']}: both teams had scores < 10"
+                f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: both teams had scores < 10"
             )
 
     def check_league(game):
@@ -98,11 +98,11 @@ for iseason in range(LAST_SEASON0 + 1):
         t2lea = get_team_league(t2)
         if (t1lea != league) or (t2lea != league):
             raise Exception(
-                f"Error in game {game['id']} of season {game['season']} day {game['day']}: league information does not match: {t1}:{t1lea}, {t2}:{t2lea}"
+                f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: league information does not match: {t1}:{t1lea}, {t2}:{t2lea}"
             )
 
     def check_id(game):
-        if "id" not in game.keys():
+        if "gameid" not in game.keys():
             print(game)
             raise Exception(
                 f"Error in game of season {game['season']} day {game['day']}: no id found"
@@ -111,13 +111,13 @@ for iseason in range(LAST_SEASON0 + 1):
     def check_pattern(game):
         if "patternName" not in game.keys():
             raise Exception(
-                f"Error in game {game['id']} of season {game['season']} day {game['day']}: game is missing required key patternName"
+                f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: game is missing required key patternName"
             )
 
     def check_map(game):
         if "map" not in game.keys():
             raise Exception(
-                f"Error in game {game['id']} of season {game['season']} day {game['day']}: game is missing required key patternName"
+                f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: game is missing required key patternName"
             )
         mapp = game["map"]
         # required keys that must be present
@@ -136,18 +136,18 @@ for iseason in range(LAST_SEASON0 + 1):
         for rk in req_keys:
             if rk not in mapp:
                 raise Exception(
-                    f"Error in game {game['id']} of season {game['season']} day {game['day']}: game map is missing key \"{rk}\"!"
+                    f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: game map is missing key \"{rk}\"!"
                 )
         # for urk in unreq_keys:
         #    if urk in mapp:
-        #        raise Exception("Error in game {game['id']} of season {game['season']} day {game['day']}: game map should not have key \"{urk}\"!")
+        #        raise Exception("Error in game {game['gameid']} of season {game['season']} day {game['day']}: game map should not have key \"{urk}\"!")
 
     def check_wl(game):
         req_keys = ["team1WinLoss", "team2WinLoss"]
         for rk in req_keys:
             if rk not in game:
                 raise Exception(
-                    f"Error in game {game['id']} of season {game['season']} day {game['day']}: game map is missing key \"{rk}\"!"
+                    f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: game map is missing key \"{rk}\"!"
                 )
 
         wlsum1 = game["team1WinLoss"][0] + game["team1WinLoss"][1]
@@ -155,17 +155,17 @@ for iseason in range(LAST_SEASON0 + 1):
         if wlsum1 != (game["day"]):
             print(game)
             raise Exception(
-                f"Error in game {game['id']} of season {game['season']} day {game['day']}: win loss record for team 1 sums to {wlsum1}, should sum to {game['day']}"
+                f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: win loss record for team 1 sums to {wlsum1}, should sum to {game['day']}"
             )
         if wlsum2 != (game["day"]):
             raise Exception(
-                f"Error in game {game['id']} of season {game['season']} day {game['day']}: win loss record for team 2 sums to {wlsum2}, should sum to {game['day']}"
+                f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: win loss record for team 2 sums to {wlsum2}, should sum to {game['day']}"
             )
 
     def check_game_season(game, correct_season):
         if iseason != game["season"]:
             raise Exception(
-                f"Error in game {game['id']} of season {game['season']} day {game['day']}: season should be {correct_season}"
+                f"Error in game {game['gameid']} of season {game['season']} day {game['day']}: season should be {correct_season}"
             )
 
     def check_season_day(day):
@@ -222,12 +222,12 @@ for iseason in range(LAST_SEASON0 + 1):
             sched_team_names.add(t1)
             sched_team_names.add(t2)
 
-            if game["id"] in sched_game_ids:
+            if game["gameid"] in sched_game_ids:
                 raise Exception(
-                    f"Error: game id {game['id']} is a duplicate in the schedule!"
+                    f"Error: game id {game['gameid']} is a duplicate in the schedule!"
                 )
             else:
-                sched_game_ids.add(game["id"])
+                sched_game_ids.add(game["gameid"])
 
     # schedule.json and teams.json must have the same number of teams
     if len(sched_team_names) != len(teams):
@@ -285,12 +285,12 @@ for iseason in range(LAST_SEASON0 + 1):
             season_team_names.add(t1)
             season_team_names.add(t2)
 
-            if game["id"] in season_game_ids:
+            if game["gameid"] in season_game_ids:
                 raise Exception(
-                    f"Error: game id {game['id']} is a duplicate in the season!"
+                    f"Error: game id {game['gameid']} is a duplicate in the season!"
                 )
             else:
-                season_game_ids.add(game["id"])
+                season_game_ids.add(game["gameid"])
 
     # season.json and teams.json must have the same number of teams
     if len(season_team_names) != len(teams):
@@ -384,12 +384,12 @@ for iseason in range(LAST_SEASON0 + 1):
             for game in day:
                 bracket_team_names.add(game["team1Name"])
                 bracket_team_names.add(game["team2Name"])
-                if game["id"] in bracket_game_ids:
+                if game["gameid"] in bracket_game_ids:
                     raise Exception(
-                        f"Error: game id {game['id']} is a duplicate in the bracket!"
+                        f"Error: game id {game['gameid']} is a duplicate in the bracket!"
                     )
                 else:
-                    bracket_game_ids.add(game["id"])
+                    bracket_game_ids.add(game["gameid"])
 
     # Verify series are the correct lengths
     ldslen = len(bracket["LDS"])
@@ -469,12 +469,12 @@ for iseason in range(LAST_SEASON0 + 1):
 
                 postseason_team_names.add(t1)
                 postseason_team_names.add(t2)
-                if game["id"] in postseason_game_ids:
+                if game["gameid"] in postseason_game_ids:
                     raise Exception(
-                        f"Error: game id {game['id']} is a duplicate in the postseason!"
+                        f"Error: game id {game['gameid']} is a duplicate in the postseason!"
                     )
                 else:
-                    postseason_game_ids.add(game["id"])
+                    postseason_game_ids.add(game["gameid"])
 
     for abbr, series_name in ABBR_TO_NAME.items():
         miniseason = postseason[abbr]
